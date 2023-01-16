@@ -95,7 +95,7 @@ body .footer .mail {
 
 
 
-@media (max-width: 1500px) {
+@media (max-width: 1400px) {
   body main {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
