@@ -1,0 +1,326 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  /*footer grid*/
+}
+
+
+body .fondo {
+  /* grid-area: presentacion; */
+  width: auto;
+  height: 700px;
+  background-image: url("/web_cdp/img/fondo.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40rem;
+  max-width: 100%;
+  position: relative;
+}
+
+body .fondo .header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+  position: -webkit-sticky;
+  position: sticky;
+  /*no funciona, averiguar porque o como hacerlo desde una clase de bootstrap*/
+}
+
+
+body .header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+  position: -webkit-sticky;
+  position: sticky;
+  /*no funciona, averiguar porque o como hacerlo desde una clase de bootstrap*/
+}
+
+body .header nav.navbar.navbar-expand-lg.navbar-light {
+  background-color: rgba(83, 86, 100, 0.705);
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+
+body main .presentacion {
+  padding: 70px;
+  background-color: rgba(83, 86, 100, 0.705);
+}
+
+body main .presentacion p {
+  text-align: center;
+  font-size: 20px;
+  padding: 40px;
+  margin: 30px;
+}
+
+
+body main .fondoMain h2 {
+  text-align: center;
+  font-size: 40px;
+  padding: 60px;
+  color: #f5ecec;
+}
+
+body main #productosTotales {
+  background-color: rgba(223, 205, 157, 0.788);
+  width: auto;
+  height: auto;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*las cajas, haganse flexibles independientemente del tamaño, para que entren en su padre contenedor*/
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*column, hay mas*/
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  /*tres opciones, nowrap, wrap y wrap diverse, por defecto es nowrap*/
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+}
+
+body main #productosTotales #panesPizzas, body main #productosTotales #budinesMuffins, body main #productosTotales #tortas {
+  width: auto;
+  height: auto;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*las cajas, haganse flexibles independientemente del tamaño, para que entren en su padre contenedor*/
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  /*column, hay mas*/
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /*tres opciones, nowrap, wrap y wrap diverse, por defecto es nowrap*/
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+}
+
+body main #productosTotales #panesPizzas #producto, body main #productosTotales #budinesMuffins #producto, body main #productosTotales #tortas #producto {
+  width: 300px;
+  height: 300px;
+  margin: 0.9rem;
+}
+
+body main #productosTotales #panesPizzas #producto h2, body main #productosTotales #budinesMuffins #producto h2, body main #productosTotales #tortas #producto h2 {
+  padding: 90px;
+  text-align: center;
+}
+
+body main #productosTotales #panesPizzas #producto img, body main #productosTotales #budinesMuffins #producto img, body main #productosTotales #tortas #producto img {
+  width: 300px;
+  height: 300px;
+}
+
+body main #productosTotales #panesPizzas #producto img :hover, body main #productosTotales #budinesMuffins #producto img :hover, body main #productosTotales #tortas #producto img :hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+body main .instagram-precios {
+  width: 300px;
+  text-align: center;
+}
+
+body main .nosotros {
+  /*PAGINA NOSOTROS*/
+  background-color: #b8b099;
+  text-align: center;
+  padding: 30px;
+  margin: 0px;
+}
+
+body main .nosotros h1, body main .nosotros h2, body main .nosotros p {
+  padding: 3px;
+}
+
+body .container {
+  /*PAGINA CONTACTO*/
+}
+
+body .container .text-center-header {
+  background-color: rgba(223, 205, 157, 0.788);
+  text-align: center;
+  font-size: 27px;
+  padding: 12px;
+}
+
+body .container .form-control {
+  font-size: 15px;
+  color: #36A0FF;
+  padding: 10px;
+  width: 100%;
+}
+
+body .container .form-group {
+  text-align: center;
+}
+
+body .container .form-group .btn-primary {
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+  width: 40%;
+}
+
+body aside {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+}
+
+body .caracteristica {
+  width: 300px;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  padding: 30px;
+}
+
+body .caracteristica p {
+  padding: 10px;
+}
+
+body .caracteristica h2:hover {
+  color: rgba(56, 50, 51, 0.233);
+  border-radius: 20px;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+body .separador {
+  background-color: rgba(228, 176, 79, 0.438);
+  width: auto;
+  height: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+
+body .footer p {
+  padding: 10px;
+}
+
+body .footer a {
+  margin: 10px;
+}
+
+body .footer .ubicacion {
+  width: 800px;
+  height: auto;
+  margin: 0px;
+}
+
+h1, h2, h3, p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*tipografía sólo del título/logo*/
+@font-face {
+  font-family: "Kaushan_Script";
+  src: url("./Kaushan_Script/KaushanScript-Regular.ttf");
+}
+
+/*vista mobile*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  main .presentacion {
+    padding: 40px;
+    margin: 10px;
+  }
+  main .presentacion p {
+    text-align: center;
+    font-size: 20px;
+    padding: 30px;
+  }
+  aside {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    margin: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body .grilla {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "header" "section" "section1 " "section2 " "section3 " "section4 " "section5 " "section6 " "section7 " "footer";
+    -ms-grid-rows: auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  body .grilla .textoAlimentacion {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /*column, hay mas*/
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: section;
+    text-align: center;
+    margin: 0px;
+    /*centra la section dentro de la grilla*/
+  }
+  body .grilla .imagenAlimentacion img {
+    width: 100%;
+  }
+  .caracteristica {
+    width: 300px;
+    height: auto;
+    margin: 0px;
+    text-align: center;
+    padding: 10px;
+  }
+}
